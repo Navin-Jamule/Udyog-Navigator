@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udyog Navigator</title>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="newdesign.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static',filename='newdesign.css')}}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Udyog-Navigator</a></div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <button><a href="{{ url_for('login') }}">Login</a></button>
+                <button><a href="{{ url_for('register') }}">Register</a></button>
+            </ul>
+        </div>
+    </nav>
+   <!--- <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+          <div class="container">
+            <a class="navbar-brand mr-4" href="/">Flask Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+                <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
+              </div>-->
+              <!-- Navbar Right Side -->
+              <!--<div class="navbar-nav">
+                {% if current_user.is_authenticated %}
+                  <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
+                  <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+                {% else %}
+                  <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                  <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>-->
+    <div class="imgn">
+        <img src="{{ url_for('static', filename='Images/1st.png') }}" alt="1st Image">
+       
+        
+    </div>
+    <div class="imgn2">
+        <img src="{{ url_for('static', filename='Images/feature.png') }}" alt="Feature Image">
+    </div>
+
+    <div class="container">
+        <h1>Government Schemes or Divyangjans</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-image lap-1"></div>
+                <h2>Schemes </h2>
+                <p>Govt Schemes for the deveploment of the special need</p>
+            </div> 
+            <div class="card">
+                <div class="card-image lap-2"></div>
+                <h2>Promote Learning</h2>
+                <p>Aims at helping disabled persons by bringing suitable, durable, scientifically-manufactured, modern, standard aids and appliances within their reach.
+                </p>
+            </div> 
+            <div class="card">
+                <div class="card-image lap-3"></div>
+                <h2>Recuriment</h2>
+                <p>Recruitment notification from https://niepmd.tn.nic.in/ 
+                </p>
+            </div> 
+        </div>
+    </div>
+<!--Fourth Page Starting-->
+    <div class="Fourth-page">
+        <h1>Private,Goverment and NGO Jobs for You !</h1>
+         <div class="nav-search">
+            <input placeholder="Job Titles or keywords" class="search-input">
+            <select class="search-select">
+                <option>All Type</option>
+            </select>
+            <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </div> 
+        </div> 
+     <div class="icon-container">
+        <i class="fa-solid fa-briefcase"></i><span class="job-count">+1000 Jobs</span>
+        <i class="fa-solid fa-location-dot"></i><span class="job-count">Location</span>
+        <i class="fa-solid fa-user"> </i><span class="job-count">+ 500 Candidate People </span>
+     </div>
+    </div>
+<!--Fourth Page Ending-->
+
+<!--Fifth Page Starting-->
+   <div class="fifth-page">
+     <div class="container-1">
+     <div class="text-overlay-1">
+        <h1>Register as an Employer</h1>
+        <br><br><br>
+        <div class="another-one">
+        <i class="fa-solid fa-circle-check"></i><span class="job-employer">Access a Diverse Talent Pool</span>
+        <br><br>
+        <i class="fa-solid fa-circle-check"></i><span class="job-employer">Targeted Job Listing</span>
+        <br><br>
+        <i class="fa-solid fa-circle-check"></i><span class="job-employer">Build your brand</span>
+        </div>
+        <br>
+        <br><br>
+        <button><a href="#">Post a Job</a></button>
+     </div>
+     </div>
+
+     <div class="container-2">
+     <div class="text-overlay-2">
+            <h1>Register as an Candidate</h1>
+            <br><br><br>
+            <div class="another-one">
+            <i class="fa-solid fa-circle-check"></i><span class="job-employer">Access Exclussive Opporutnities</span>
+            <br><br>
+            <i class="fa-solid fa-circle-check"></i><span class="job-employer">Connect with top Employers</span>
+            <br><br>
+            <i class="fa-solid fa-circle-check"></i><span class="job-employer">Goverment,Private and NGO Jobs</span>
+            </div>
+            <br>
+            <br><br>
+            <button><a href="#">Register Now</a></button>
+            
+     </div>
+     </div>
+
+   </div>
+<!--Fifth Page Ending-->
+<div class="sixth-page">
+    <h1>Browse Jobs By Category</h1>
+    <div class="sixth-page-card-container">
+        <div class="sixth-page-card">
+            <div class="card-image laap-1"></div>
+            <h2>Physical Disability </h2>
+            <p>A physical disability is a limitation on a person's physical functioning, mobility, dexterity or stamina. Other physical disabilities include impairments which limit other facets of daily living, such as respiratory disorders, blindness, epilepsy and sleep disorders</p>
+        </div> 
+        <div class="sixth-page-card">
+            <div class="card-image laap-2"></div>
+            <h2>Mental Illnes</h2>
+            <p>A mental disability is a cognitive or psychological condition that limits a major life activity in some way or requires special services.
+            </p>
+        </div> 
+        <div class="sixth-page-card">
+            <div class="card-image laap-3"></div>
+            <h2>Intellectual Disability</h2>
+            <p>Intellectual disability is a term used when there are limits to a person's ability to learn at an expected level and function in daily life.
+            </p>
+        </div> 
+        <div class="sixth-page-card">
+            <div class="card-image laap-4"></div>
+            <h2>Multiple Disability</h2>
+            <p>Multiple disabilities is a term for a person with a combination of disabilities, for instance, someone with both a sensory disability and a motor disability.
+            </p>
+        </div> 
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">Faq</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Post a Job</a></li>
+                    <li><a href="#">Recruitment Status</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Courses</h4>
+                <ul>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Recruitment Status</a></li>
+                    <li><a href="#">Goverment Scheme</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
